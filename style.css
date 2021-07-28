@@ -1,0 +1,85 @@
+header {
+  background-color: #f7f7f7;
+  padding: 23px;
+  font-size: 15px;
+  color: #686868;
+}
+
+header p {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .container {
+  display: flex;
+  align-items: center;
+  width: 1300px;
+  font-size: 12px;
+  font-weight: 700;
+}
+nav .container .container-left {
+  width: 50%;
+}
+nav .container .container-left .menus {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+nav .container .container-left .menus .menu_item {
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+nav .container .container-rigth {
+  width: 50%;
+}
+nav .container .container-rigth .menus {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav .container .container-rigth .menus .menu_item {
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+nav .container .container-rigth .menus .menu_item.bar {
+  margin: 0;
+  border: 0;
+  margin-right: 10px;
+  height: 20px;
+  border-right: 1px solid #eee;
+}
+
+nav .container .container-rigth .menus .menu_item img {
+  display: block;
+}
+
+section .container {
+}
+
+section .container .intro_img {
+  position: relative;
+  width: 100vw;
+  height: 650px;
+  background-image: url("./images/intro.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section .container .intro_img .intro_box {
+  width: 500px;
+  height: 70%;
+  top: 15%;
+  left: 18%;
+  position: absolute;
+  background-color: #ade8bf;
+  border: 3px solid black;
+}
