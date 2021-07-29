@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 header {
   background-color: #f7f7f7;
   padding: 23px;
@@ -10,9 +14,14 @@ header p {
 }
 
 nav {
+  position: sticky;
+  top: 0;
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: white;
+  border-bottom: 1px solid #bbb8b8;
 }
 
 nav .container {
@@ -62,10 +71,11 @@ nav .container .container-rigth .menus .menu_item img {
   display: block;
 }
 
-section .container {
+.main1 {
+  margin-bottom: 40px;
 }
 
-section .container .intro_img {
+.main1 .container .intro_img {
   position: relative;
   width: 100vw;
   height: 650px;
@@ -74,12 +84,213 @@ section .container .intro_img {
   background-size: cover;
 }
 
-section .container .intro_img .intro_box {
-  width: 500px;
-  height: 70%;
+.main1 .container .intro_img .intro_box {
+  position: absolute;
   top: 15%;
   left: 18%;
-  position: absolute;
-  background-color: #ade8bf;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 500px;
+  height: 70%;
   border: 3px solid black;
+  padding: 50px;
+  background-color: #ade8bf;
+}
+
+.main1 .container .intro_img .intro_box .title {
+  display: block;
+  margin: 10px 0;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.main1 .container .intro_img .intro_box .subTitle {
+  display: block;
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.main1 .container .intro_img .intro_box .btn {
+  display: block;
+  width: fit-content;
+  padding: 15px 30px 15px 15px;
+  font-size: 15px;
+  font-weight: 500;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.main2 {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  text-align: center;
+}
+
+.main2 .container {
+  width: 1300px;
+}
+
+.main2 .mainTitle {
+  display: flex;
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+
+.main2 .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 35%;
+  margin-bottom: 20px;
+  /* background-color: green; */
+}
+
+.main2 .menu_name {
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.main2 p {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.main2 .goods_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.main2 .goods_list .goods {
+  padding-right: 30px;
+}
+
+.main2 .goods_list .goods .goods_img {
+  margin-bottom: 20px;
+}
+
+.main2 .goods_list .goods .title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.main2 .goods_list .goods .subTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.main2 .goods_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.main2 .goods_menu input {
+  margin: 0;
+}
+
+.main2 .goods .deliver-content {
+  display: flex;
+  font-size: 13px;
+  color: #686868;
+  margin-bottom: 10px;
+}
+
+.main2 .selectToCart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main2 .goods .day {
+  padding: 15px 10px;
+  font-weight: 500;
+}
+
+.main2 .addToCart {
+  width: 70%;
+  background-color: #2a2a2a;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.main2 .addToCart:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.main2 .addToCart:hover .btn.minus {
+  color: black;
+  background-color: white;
+  border: 1px solid white;
+}
+
+.main2 .addToCart:hover .btn.plus {
+  color: black;
+  background-color: white;
+  border: 1px solid white;
+}
+
+.main2 .addToCart:hover .btn.cart {
+  color: black;
+  background-color: white;
+  border: 1px solid white;
+  border-left: 1px solid #eee;
+}
+
+.main2 .addToCart:hover .num {
+  color: black;
+  background-color: white;
+  border: 1px solid white;
+}
+
+.main2 .addToCart .btn.minus {
+  background-color: #2a2a2a;
+  color: #eee;
+  border: 1px solid #2a2a2a;
+  cursor: pointer;
+}
+
+.main2 .addToCart .btn.plus {
+  background-color: #2a2a2a;
+  color: #eee;
+  border: 1px solid #2a2a2a;
+  cursor: pointer;
+}
+.main2 .addToCart .num {
+  margin: 10px;
+  font-size: 10px;
+  color: #eee;
+  text-align: center;
+}
+
+.main2 .addToCart .btn.cart {
+  width: 100%;
+  border: 1px solid #2a2a2a;
+  border-left: 1px solid #eee;
+  background-color: #2a2a2a;
+  color: #eee;
+  cursor: pointer;
+}
+
+.main2 .btn.shop {
+  padding: 20px 100px;
+  font-weight: 600;
+  background-color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.main2 .btn.shop:hover {
+  color: #47af19;
 }
